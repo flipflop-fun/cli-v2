@@ -24,43 +24,43 @@ The CLI supports two ways to provide your keypair:
 #### Launch a new token
 
 ```bash
-flipflop launch --name "MyToken" --symbol "MTK" --keypair-file ./keypair.json --rpc <your_rpc_url>
+flipflop2 launch --name "MyToken" --symbol "MTK" --keypair-file ./keypair.json --rpc <your_rpc_url>
 # or
-flipflop launch --name "MyToken" --symbol "MTK" --keypair-bs58 "your_base58_private_key" --rpc <your_rpc_url>
+flipflop2 launch --name "MyToken" --symbol "MTK" --keypair-bs58 "your_base58_private_key" --rpc <your_rpc_url>
 ```
 
 #### Set URC code
 
 ```bash
-flipflop set-urc --mint <mint_address> --urc "mycode" --keypair-file ./keypair.json --rpc <your_rpc_url>
+flipflop2 set-urc --mint <mint_address> --urc "mycode" --keypair-file ./keypair.json --rpc <your_rpc_url>
 # or
-flipflop set-urc --mint <mint_address> --urc "mycode" --keypair-bs58 "your_base58_private_key" --rpc <your_rpc_url>
+flipflop2 set-urc --mint <mint_address> --urc "mycode" --keypair-bs58 "your_base58_private_key" --rpc <your_rpc_url>
 ```
 
 #### Mint tokens
 
 ```bash
-flipflop mint --mint <mint_address> --urc "mycode" --keypair-file ./keypair.json --rpc <your_rpc_url>
+flipflop2 mint --mint <mint_address> --urc "mycode" --keypair-file ./keypair.json --rpc <your_rpc_url>
 # or
-flipflop mint --mint <mint_address> --urc "mycode" --keypair-bs58 "your_base58_private_key" --rpc <your_rpc_url>
+flipflop2 mint --mint <mint_address> --urc "mycode" --keypair-bs58 "your_base58_private_key" --rpc <your_rpc_url>
 ```
 
 #### Display mint information
 
 ```bash
-flipflop display-mint --mint <mint_address> --rpc <your_rpc_url>
+flipflop2 display-mint --mint <mint_address> --rpc <your_rpc_url>
 ```
 
 #### Display URC information
 
 ```bash
-flipflop display-urc --urc "mycode" --rpc <your_rpc_url>
+flipflop2 display-urc --urc "mycode" --rpc <your_rpc_url>
 ```
 
 #### View system configuration
 
 ```bash
-flipflop system-config --rpc <your_rpc_url>
+flipflop2 system-config --rpc <your_rpc_url>
 ```
 
 Displays comprehensive system configuration including:
@@ -73,7 +73,7 @@ Displays comprehensive system configuration including:
 #### Upload metadata and get URI
 
 ```bash
-flipflop metadata --name "MyToken" --symbol "MTK" --description "My awesome token" --image-path ./token-image.png --rpc <your_rpc_url>
+flipflop2 metadata --name "MyToken" --symbol "MTK" --description "My awesome token" --image-path ./token-image.png --rpc <your_rpc_url>
 ```
 
 Uploads token metadata (including image) and returns the metadata URI for use in token creation.
