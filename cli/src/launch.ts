@@ -64,7 +64,7 @@ export async function launchCommand(options: LaunchOptions) {
       console.log('\n⚙️  Token Configuration');
       console.log('━'.repeat(50));
       console.log(`Admin: ${result.data.configuration.admin}`);
-      console.log(`Fee Rate: ${(result.data.configuration.feeRate * 1).toFixed(2)} SOL`);
+      console.log(`Fee Rate: ${(result.data.configuration.feeRate * 1).toFixed(2)} USDC`);
       console.log(`Max Supply: ${result.data.configuration.maxSupply.toLocaleString()}`);
       console.log(`Initial Mint Size: ${result.data.configuration.initialMintSize.toLocaleString()}`);
       console.log(`Target Eras: ${result.data.configuration.targetEras}`);

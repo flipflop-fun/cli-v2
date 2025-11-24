@@ -35,7 +35,7 @@ export async function displayMintCommand(options: any) {
     console.log(`Token Vault: ${mintData.data.tokenVault.toBase58()}`);
     console.log(`USDC Vault: ${mintData.data.baseVault.toBase58()}`);
     console.log('');
-    console.log(`Fee Rate: ${(mintData.data.feeRate * 1).toFixed(2)} SOL`);
+    console.log(`Fee Rate: ${(mintData.data.feeRate * 1).toFixed(2)} USDC`);
     console.log(`Target Eras: ${mintData.data.targetEras}`);
     console.log(`Initial Mint Size: ${mintData.data.initialMintSize.toLocaleString()}`);
     console.log(`Initial Target Mint Size per Epoch: ${mintData.data.initialTargetMintSizePerEpoch.toLocaleString()}`);

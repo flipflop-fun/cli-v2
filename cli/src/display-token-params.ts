@@ -25,7 +25,7 @@ export const displayTokenParamsCommand = async (options: {
     console.log('');
     // Iterate through all properties of the result object
     console.log(`Target Eras:                             ${result.data.targetEras}`);
-    console.log(`Fee Rate:                                ${result.data.feeRate.toNumber() / 1e9} SOL`);
+    console.log(`Fee Rate:                                ${result.data.feeRate.toNumber() / 1e9} USDC`);
     console.log(`Max Checkpoints per Milestone:           ${result.data.epochesPerEra}`);
     console.log(`Target Seconds per Checkpoint:           ${result.data.targetSecondsPerEpoch}`);
     console.log(`Reduce Ratio:                            ${100 - result.data.reduceRatio.toNumber()}%`);

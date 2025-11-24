@@ -25,11 +25,11 @@ export async function systemConfigCommand(options: SystemConfigOptions) {
     // console.log(`💰 Protocol Fee Rate:         ${(systemConfigAccountInfo.data.protocolFeeRate * 100).toFixed(2)}%`);
     console.log(`💸 Refund Fee Rate:           ${(systemConfigAccountInfo.data.refundFeeRate * 100).toFixed(2)}%`);
     console.log(`⏰ Referrer Reset Interval:   ${systemConfigAccountInfo.data.referrerResetIntervalSeconds.toString()} seconds`);
-    console.log(`🏷️  Update Metadata Fee:       ${(systemConfigAccountInfo.data.updateMetadataFee).toFixed(2)} SOL`);
-    console.log(`🚀 Customized Deploy Fee:     ${(systemConfigAccountInfo.data.customizedDeployFee).toFixed(2)} SOL`);
+    console.log(`🏷️  Update Metadata Fee:       ${(systemConfigAccountInfo.data.updateMetadataFee).toFixed(2)} USDC`);
+    console.log(`🚀 Customized Deploy Fee:     ${(systemConfigAccountInfo.data.customizedDeployFee).toFixed(2)} USDC`);
     console.log(`💧 Init Pool USDC Percent:    ${(systemConfigAccountInfo.data.initPoolBaseAmount * 100).toFixed(2)}%`);
     console.log(`🎓 Graduate Fee Rate:         ${(systemConfigAccountInfo.data.graduateFeeRate).toFixed(2)}%`);
-    console.log(`💎 Min Graduate Fee:          ${(systemConfigAccountInfo.data.minGraduateFee).toFixed(2)} SOL`);
+    console.log(`💎 Min Graduate Fee:          ${(systemConfigAccountInfo.data.minGraduateFee).toFixed(2)} USDC`);
     console.log(`🌊 Raydium CPMM Create Fee:   ${(systemConfigAccountInfo.data.raydiumCpmmCreateFee).toFixed(2)} SOL`);
     // console.log(`📊 Transfer Fee Basis Points: ${systemConfigAccountInfo.transferFeeBasisPoints}`);
     console.log(`⏸️  Is Paused:                ${systemConfigAccountInfo.data.isPause ? '✅ Yes' : '❌ No'}`);
