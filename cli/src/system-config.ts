@@ -27,7 +27,7 @@ export async function systemConfigCommand(options: SystemConfigOptions) {
     console.log(`⏰ Referrer Reset Interval:   ${systemConfigAccountInfo.data.referrerResetIntervalSeconds.toString()} seconds`);
     console.log(`🏷️  Update Metadata Fee:       ${(systemConfigAccountInfo.data.updateMetadataFee).toFixed(2)} SOL`);
     console.log(`🚀 Customized Deploy Fee:     ${(systemConfigAccountInfo.data.customizedDeployFee).toFixed(2)} SOL`);
-    console.log(`💧 Init Pool WSOL Percent:    ${(systemConfigAccountInfo.data.initPoolBaseAmount * 100).toFixed(2)}%`);
+    console.log(`💧 Init Pool USDC Percent:    ${(systemConfigAccountInfo.data.initPoolBaseAmount * 100).toFixed(2)}%`);
     console.log(`🎓 Graduate Fee Rate:         ${(systemConfigAccountInfo.data.graduateFeeRate).toFixed(2)}%`);
     console.log(`💎 Min Graduate Fee:          ${(systemConfigAccountInfo.data.minGraduateFee).toFixed(2)} SOL`);
     console.log(`🌊 Raydium CPMM Create Fee:   ${(systemConfigAccountInfo.data.raydiumCpmmCreateFee).toFixed(2)} SOL`);

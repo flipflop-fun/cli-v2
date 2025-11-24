@@ -39,7 +39,7 @@ export const estimateVolumeCommand = async (options: {
     // Reserve information
     console.log('\n📈 Pool Reserves');
     console.log('━'.repeat(30));
-    console.log(`Base Reserve:                            ${(result.data.baseReserve.toNumber() / LAMPORTS_PER_SOL)} SOL`);
+    console.log(`Base Reserve:                            ${(result.data.baseReserve.toNumber() / 1000000)} USDC`);
     console.log(`Quote Reserve:                           ${result.data.quoteReserve.div(new BN(LAMPORTS_PER_SOL)).toNumber()} Tokens`);
     // console.log(`Constant Product (k):                   ${result.data.k.toString()}`);
     
@@ -48,7 +48,7 @@ export const estimateVolumeCommand = async (options: {
       const actionText = result.data.action === 'buy' ? 'Required SOL' : 'Expected Receive SOL';
       console.log(`\n💰 ${actionText}`);
       console.log('━'.repeat(30));
-      console.log(`WSOL Amount:                                  ${result.data.requiredAmount.toNumber() / LAMPORTS_PER_SOL} SOL`);
+      console.log(`USDC Amount:                                  ${result.data.requiredAmount.toNumber() / 1000000} USDC`);
     }
     
     if (result.data.actualPrice) {
