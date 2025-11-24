@@ -1,10 +1,10 @@
 {
   "name": "@flipflop-sdk/cli-v2",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "FlipFlop CLI v2 tool for common operations",
   "main": "dist/cli.js",
   "bin": {
-    "flipflop": "./dist/cli.js"
+    "flipflop2": "./dist/cli.js"
   },
   "files": [
     "dist/**/*",
