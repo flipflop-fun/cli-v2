@@ -1,6 +1,6 @@
 {
   "name": "@flipflop-sdk/cli-v2",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "FlipFlop CLI v2 tool for common operations",
   "main": "dist/cli.js",
   "bin": {
@@ -32,7 +32,7 @@
   },
   "dependencies": {
     "@coral-xyz/anchor": "0.31.1",
-    "@flipflop-sdk/node-v2": "^1.0.2",
+    "@flipflop-sdk/node-v2": "^1.0.3",
     "@solana/spl-token": "^0.4.9",
     "@solana/spl-token-metadata": "^0.1.6",
     "@solana/web3.js": "^1.98.0",
