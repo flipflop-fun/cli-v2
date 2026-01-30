@@ -6,6 +6,7 @@ import { NATIVE_MINT } from '@solana/spl-token';
 interface DisplayPoolOptions {
   rpc?: string;
   mint: string;
+  baseMint?: string;
 }
 
 export async function displayPoolCommand(options: DisplayPoolOptions) {
@@ -21,8 +22,9 @@ export async function displayPoolCommand(options: DisplayPoolOptions) {
 
   try {
     const connection = new Connection(options.rpc, 'confirmed');
+    const baseMint = options.baseMint ? new PublicKey(options.baseMint) : NATIVE_MINT;
     const result = await displayPool({
-      tokenAMint: NATIVE_MINT,
+      tokenAMint: baseMint,
       tokenBMint: new PublicKey(options.mint),
       rpc: options.rpc,
     });

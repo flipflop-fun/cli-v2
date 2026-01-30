@@ -160,6 +160,7 @@ program.command('raydium-display-pool')
   .description('Display Raydium CPMM pool information')
   .option('--rpc <url>', 'RPC endpoint', 'https://api.mainnet-beta.solana.com')
   .option('--mint <address>', 'Mint account address')
+  .option('--base-mint <address>', 'Base token mint account address (default: SOL)')
   .action(displayPoolCommand);
 
 program.command('raydium-display-lp')
